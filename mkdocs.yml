@@ -1,0 +1,53 @@
+site_name: My Docs (我的第一个站点)
+
+
+nav: 
+  - 主页: index.md
+
+  - 教程:
+    - 编程语言:
+      - Java: 
+        - 入门: Tutorial/Java/index.md
+        - 基础语法: Tutorial/Java/basics.md
+      - Python: 
+        - 入门: Tutorial/Python/index.md
+        - 基础语法: Tutorial/Python/basics.md
+      - JavaScript: 
+        - 入门: Tutorial/JavaScript/index.md
+        - 基础语法: Tutorial/JavaScript/basics.md
+    - 前端技术:
+      - HTML: Tutorial/HTML/index.md
+      - Web: Tutorial/Web/index.md
+    - 数据库:
+      - SQL: 
+        - 概念: Tutorial/SQL/concept.md
+
+
+  - 关于我: about.md
+
+
+theme:
+  name: material
+  language: zh  # 设置界面语言为中文
+
+  palette:
+    # 自动跟随系统深色/浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+
+  features:
+    - navigation.tabs          # 顶部标签页导航
+    - navigation.sections      # 侧边栏分组
+    - search.highlight         # 搜索高亮
+    - content.code.copy        # 代码块复制按钮
+    - toc.integrate            # 让左侧显示当前分类下的所有子项
+    - navigation.expand        # 自动展开当前父级
+    - toc.follow               # 滚动时高亮当前章节
